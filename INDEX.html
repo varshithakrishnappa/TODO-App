@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskFlow Pro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <div class="header">
+        <h2>🚀 TaskFlow</h2>
+        <button id="toggleDark" class="btn btn-sm btn-dark">🌙</button>
+    </div>
+
+    <!-- Input -->
+    <div class="task-input-box">
+        <input type="text" id="taskInput" placeholder="Add task...">
+        <input type="date" id="dueDate">
+        <button id="addTask"><i class="bi bi-plus-lg"></i></button>
+    </div>
+
+    <small id="errorMsg"></small>
+
+    <!-- Search -->
+    <input type="text" id="searchTask" placeholder="Search..." class="form-control mt-3">
+
+    <!-- Stats -->
+    <div class="stats mt-2">
+        <span id="total"></span>
+        <span id="completed"></span>
+        <span id="pending"></span>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Empty Illustration -->
+    <div id="emptyState" class="text-center mt-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png" width="120">
+        <p class="text-muted">No tasks yet. Start adding 🚀</p>
+    </div>
+
+    <button id="clearAll" class="btn btn-danger w-100 mt-3">Clear All</button>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

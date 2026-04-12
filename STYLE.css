@@ -1,0 +1,85 @@
+body {
+    background: #f4f6fb;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #1e1e2f;
+    color: white;
+}
+
+.app-container {
+    width: 480px;
+    margin: 40px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-input-box {
+    display: flex;
+    gap: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.task-input-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.task {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation: fadeIn 0.3s ease;
+}
+
+.task:hover {
+    transform: scale(1.02);
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.icons i {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
