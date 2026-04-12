@@ -3,7 +3,7 @@
 A modern, feature-rich To-Do List web application built using HTML, CSS, JavaScript, jQuery, and Bootstrap.
 
 ## 🌐 Live Demo
-👉 [https://your-username.github.io/TODO_APP/](https://github.com/varshithakrishnappa/TODO-App.git)
+👉 (https://github.com/varshithakrishnappa/TODO-App.git)
 
 ---
 
